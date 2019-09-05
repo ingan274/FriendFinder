@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder | Survey</title>
+
+    <!-- Bootstrap HTML/CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Script-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <h1 class="display-3">🗒 Friend Finder Survey</h1>
+            <p class="lead">Making lasting friendships one survey at a time!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="display-4">About You</h1>
+        <hr class="my-2">
+        <div class="input-group my-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Name:</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" id="name" required>
+        </div>
+        <div class="input-group my-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Link to Photo Image:</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" id="photoLink" required>
+        </div>
+
+        <h1 class="display-4 mt-5">Questions</h1>
+        <h5 class="lead">Please answer on a scale of 1 (Strongly Disagree) to 5 (Strongly Agree).</h5>
+        <hr class="my-2">
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-1">Your mind is always buzzing with unexplored ideas and
+                plans.</label>
+            <select class="form-control" id="q-1">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-2">Generally speaking, you rely more on your experience than
+                your imagination.</label>
+            <select class="form-control" id="q-2">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-3">You find it easy to stay relaxed and focused even when there
+                is some pressure.</label>
+            <select class="form-control" id="q-3">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-4">You rarely do something just out of sheer curiosity.</label>
+            <select class="form-control" id="q-4">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-5">People can rarely upset you.</label>
+            <select class="form-control" id="q-5">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-6">It is often difficult for you to relate to other people’s
+                feelings.</label>
+            <select class="form-control" id="q-6">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-7">In a discussion, truth should be more important than
+                people’s sensitivities.</label>
+            <select class="form-control" id="q-7">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-8">You rarely get carried away by fantasies and ideas.</label>
+            <select class="form-control" id="q-8">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-9">You think that everyone’s views should be respected
+                regardless of factual support.</label>
+            <select class="form-control" id="q-9">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q-10">You feel more energetic after spending time with a group of
+                people.</label>
+            <select class="form-control" id="q-10">
+                <option selected>...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">✅ Submit</button>
+        <hr class="mt-5 mb-3">
+        <p class="lead"> <a href="/api/friends">APT Friends List</a> | <a href="/">Home</a></p>
+    </div>
+
+
+    <div class="modal fade" id="match" tabindex="-1" role="dialog" aria-labelledby="match info" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span id="user-name"></span>, your perfect friend is...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4><span id="match-name"></span>!</h4>
+                    <img src="" id="match-photo" alt="friend photo">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- API requests -->
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            function validateForm() {
+                var allFieldsValid = true;
+                $(".custom-select").each(function () {
+                    if (!$(this).val()) {
+                        $(this).addClass("invalid");
+                        allFieldsValid = false;
+                    }
+                })
+                return allFieldsValid;
+            }
+            if (validateForm()) {
+                var user = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photoLink").val().trim(),
+                    scores: [
+                        parseInt($("#q-1").val()),
+                        parseInt($("#q-2").val()),
+                        parseInt($("#q-3").val()),
+                        parseInt($("#q-4").val()),
+                        parseInt($("#q-5").val()),
+                        parseInt($("#q-6").val()),
+                        parseInt($("#q-7").val()),
+                        parseInt($("#q-8").val()),
+                        parseInt($("#q-9").val()),
+                        parseInt($("#q-10").val()),
+                    ]
+                }
+                $.ajax("/api/friends", {
+                    type: "POST",
+                    data: user
+                }).then(function (closestMatch) {
+                    $(".form-control, #required").val("");
+                    $("#user-name").text(user.name);
+                    $("#match-name").text(closestMatch.name);
+                    $("#match-photo").attr("src", closestMatch.photo);
+                    $("#match").modal("toggle");
+                })
+            } else {
+                $('html,body').scrollTop(0);
+                $("#required").text("All fields are required.").css("color", "red");
+            }
+        })
+    </script>
+</body>
+
+</html>
