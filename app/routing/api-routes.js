@@ -6,10 +6,11 @@ module.exports = function (app) {
         res.json(friendsArray);
     });
 
+   // app.post to push and get friend
     app.post("/api/friends", function (req, res) {
         // Our user is the data sent in the request.
         var user = req.body;
-        // console.log(user)
+        console.log(user)
         // The differences between Friend and user
         var differences = [];
 
@@ -32,10 +33,10 @@ module.exports = function (app) {
         // If there is more than one potential friend with that score, create an array.
         var bestMatches = [];
 
-        // For each item in differences, if it is equal to the minimumDifference, add the corresponding friendData to the bestMatches array.
+        // For each item in differences, if it is equal to the minimumDifference, add the corresponding friendsArray to the bestMatches array.
         for (var i = 0; i < differences.length; i++) {
             if (differences[i] === minimumDifference) {
-                bestMatches.push(friendData[i]);
+                bestMatches.push(friendsArray[i]);
             }
         }
 
