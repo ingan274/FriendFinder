@@ -12,10 +12,6 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
     <!-- Bootstrap Script-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -23,8 +19,33 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Friend Finder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/survey">Survey <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/api/friends">API Friends List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="https://github.com/ingan274/FriendFinder">GitHub
+                        Repository</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container mt-3">
-        <div class="jumbotron">
+        <div class="jumbotron bg-info text-white">
             <h1 class="display-3">🗒 Friend Finder Survey</h1>
             <p class="lead">Making lasting friendships one survey at a time!</p>
         </div>
@@ -54,11 +75,11 @@
                 plans.</label>
             <select class="form-control" id="q-1">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
@@ -66,11 +87,11 @@
                 your imagination.</label>
             <select class="form-control" id="q-2">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
@@ -78,33 +99,33 @@
                 is some pressure.</label>
             <select class="form-control" id="q-3">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
             <label class="input-group-text col-8" for="q-4">You rarely do something just out of sheer curiosity.</label>
             <select class="form-control" id="q-4">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
             <label class="input-group-text col-8" for="q-5">People can rarely upset you.</label>
             <select class="form-control" id="q-5">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
@@ -112,11 +133,11 @@
                 feelings.</label>
             <select class="form-control" id="q-6">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
@@ -124,22 +145,22 @@
                 people’s sensitivities.</label>
             <select class="form-control" id="q-7">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
             <label class="input-group-text col-8" for="q-8">You rarely get carried away by fantasies and ideas.</label>
             <select class="form-control" id="q-8">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
@@ -147,11 +168,11 @@
                 regardless of factual support.</label>
             <select class="form-control" id="q-9">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
         <div class="input-group mb-3">
@@ -159,86 +180,53 @@
                 people.</label>
             <select class="form-control" id="q-10">
                 <option selected>...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-primary" id="submit">✅ Submit</button>
+        <button type="submit" class="btn btn-primary " id="submit">✅ Submit</button>
         <hr class="mt-5 mb-3">
-        <p class="lead"> <a href="/api/friends">APT Friends List</a> | <a href="/">Home</a></p>
     </div>
 
+    <!-- Error Modal -->
+    <div id="errorModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
 
-    <div class="modal fade" id="match" tabindex="-1" role="dialog" aria-labelledby="match info" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+            <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title"><span id="user-name"></span>, your perfect friend is...</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h4><span id="match-name"></span>!</h4>
-                    <img src="" id="match-photo" alt="friend photo">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Please include your name and a link to a photo of you.</h4>
                 </div>
             </div>
         </div>
+
+    </div>
     </div>
 
-    <!-- API requests -->
-    <script type="text/javascript">
-        $("#submit").on("click", function (event) {
-            event.preventDefault();
-            function validateForm() {
-                var allFieldsValid = true;
-                $(".custom-select").each(function () {
-                    if (!$(this).val()) {
-                        $(this).addClass("invalid");
-                        allFieldsValid = false;
-                    }
-                })
-                return allFieldsValid;
-            }
-            if (validateForm()) {
-                var user = {
-                    name: $("#name").val().trim(),
-                    photo: $("#photoLink").val().trim(),
-                    scores: [
-                        parseInt($("#q-1").val()),
-                        parseInt($("#q-2").val()),
-                        parseInt($("#q-3").val()),
-                        parseInt($("#q-4").val()),
-                        parseInt($("#q-5").val()),
-                        parseInt($("#q-6").val()),
-                        parseInt($("#q-7").val()),
-                        parseInt($("#q-8").val()),
-                        parseInt($("#q-9").val()),
-                        parseInt($("#q-10").val()),
-                    ]
-                }
-                $.ajax("/api/friends", {
-                    type: "POST",
-                    data: user
-                }).then(function (closestMatch) {
-                    $(".form-control, #required").val("");
-                    $("#user-name").text(user.name);
-                    $("#match-name").text(closestMatch.name);
-                    $("#match-photo").attr("src", closestMatch.photo);
-                    $("#match").modal("toggle");
-                })
-            } else {
-                $('html,body').scrollTop(0);
-                $("#required").text("All fields are required.").css("color", "red");
-            }
-        })
-    </script>
+    <!-- Result Modal -->
+    <div id="resultModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Your best match!</h4>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./survey.js"> </script>
 </body>
 
 </html>

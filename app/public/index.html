@@ -12,10 +12,6 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
     <!-- Bootstrap Script-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -24,17 +20,43 @@
 </head>
 
 <body>
-    <div class="container mt-3">
-        <div class="jumbotron">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Friend Finder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/survey">Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href="/api/friends">API Friends List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="https://github.com/ingan274/FriendFinder">GitHub
+                        Repository</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-3 ">
+        <div class="jumbotron bg-info text-white">
             <h1 class="display-3">Friend Finder</h1>
-            <p class="lead">Feeling lonley? ready to make a new connection?</p>
+            <p class="lead">Feeling lonley? Ready to make a new connection?</p>
             <hr class="my-3">
             <p>With just a few basic questions, our short survey will help you find the friendship of a lifetime!</p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="/survey" role="button">🗒 Go to Survey</a>
+                <a class="btn btn-primary btn-lg bg-light text-info" href="/survey" role="button">🗒 Go to Survey</a>
             </p>
         </div>
-        <p class="lead"> <a href="/api/friends">APT Friends List</a> | <a href="https://github.com/ingan274/FriendFinder">GitHub Repository</a></p>
+        <h6>coded by isabel ngan</h6>
     </div>
 </body>
 
