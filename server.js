@@ -8,8 +8,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Data
-require("./routing/api-routes")(app);
-require("./routing/html-routes")(app);
+require("./app/routing/api-routes")(app);
+require("./app/routing/html-routes")(app);
 
 // adding listener
 app.listen(PORT, function () {
