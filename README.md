@@ -12,9 +12,10 @@ To run the site locally and interact with only your own and the example data,
 * Go to `localhost:3000` in your web browser.
 
 # Technologies Used
-* Node.js/NPM (JavaScript environment/Package manager)
+* Node.js/NPM (JavaScript environment/Package manager
 * Express.js (Web framework)
 * Heroku (Cloud platform)
 * Bootstrap (Front-end framework)
+###### Note: There is no styling
 
 ##### Week 13 assigment for the June 2019 cohort of UCLA Boot Camp
