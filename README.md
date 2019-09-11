@@ -16,6 +16,6 @@ To run the site locally and interact with only your own and the example data,
 * Express.js (Web framework)
 * Heroku (Cloud platform)
 * Bootstrap (Front-end framework)
-###### Note: There is no styling
+###### Future Developments: Add styling
 
 ##### Week 13 assigment for the June 2019 cohort of UCLA Boot Camp
